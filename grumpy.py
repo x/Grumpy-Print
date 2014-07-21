@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from itertools import cycle
 from textwrap import wrap
+import sys
 
 MAX_WIDTH = 80
 HORIZONTAL_BAR = "█" * MAX_WIDTH
@@ -57,3 +58,6 @@ def grumpy_print(msg):
 
     for chunk in chunks:
         print chunk
+
+if __name__ == "__main__":
+    grumpy_print(sys.argv[1])
